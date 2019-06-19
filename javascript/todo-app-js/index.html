@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Coda Todo</title>
+    <style>
+        #container {
+            width: 33vw;
+            margin: 2rem auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        input[type="text"] {
+            height: 50px;
+            width: 100%;
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+        }
+
+        input[type="checkbox"] {
+            zoom: 2;
+        }
+
+        li {
+            list-style: none;
+            font-size: 30px;
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input id="todoInput" type="text" placeholder="Enter Todo" />
+        <ul id="listTodos">
+           <!-- <li>
+               <input id="scales" type="checkbox" /> 
+               <label for="scales">Wake up</label>
+            </li> 
+           <li>
+                <input id="brush" type="checkbox" /> 
+                <label for="brush">Brush</label>
+           </li>  -->
+        </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
